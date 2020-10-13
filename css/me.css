@@ -1,9 +1,9 @@
-.body {
+body {
     min-width: 960px; 
     max-width: 1200px; 
     margin: 10px; 
     padding: 0; 
-    font-family: "PT Sans Narrow", Arial, sans-serif; 
+    font-family: 'PT Sans Narrow', Arial, sans-serif; 
     font-size: 14px; 
     line-height: 21px; 
     font-weight: normal; 
@@ -11,6 +11,7 @@
     text-transform: uppercase; 
     background-color: var(--basic-white); 
     text-align: center; 
+
 }
 
 .site-navagition {
@@ -19,8 +20,35 @@
     font-weight: bold;
     font-family: PT Sans;
     font-style: normal;
+    color: var(--basic-black);
+}
+
+.headers {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 :root { 
     --basic-white: #fff;
+    --basic-black: #000;
+  }
+
+  .description {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .advantages {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
   }
