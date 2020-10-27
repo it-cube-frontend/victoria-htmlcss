@@ -126,9 +126,16 @@ body {
     left: 40px;
     top: 2642px;
     background: var(--basic-white);
+  }
+
+  .contact {
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .social {
+    background: var(--basic-blue);
   }
