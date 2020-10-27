@@ -96,3 +96,11 @@ body {
     color: var(--basic-brown);
   }
 
+  .searchhotel {
+    background: var(--basic-lightbrown);
+    position: absolute;
+    width: 568px;
+    height: 86px;
+    left: 356px;
+    top: 2083px;
+  }
