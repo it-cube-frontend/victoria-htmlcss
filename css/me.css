@@ -104,3 +104,17 @@ body {
     left: 356px;
     top: 2083px;
   }
+
+  .interested {
+    position: absolute;
+    width: 435px;
+    height: 155px;
+    left: 423px;
+    top: 1936px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+  }
