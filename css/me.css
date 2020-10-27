@@ -113,4 +113,6 @@ body {
 
   .button {
     background: var(--basic-blue);
+    width: 458px;
+    height: 58px;
   }
