@@ -89,6 +89,7 @@ body {
     line-height: 26px;
     height: 86px;
     width: 568px;
+    text-transform: uppercase;
   }
 
   .footer {
@@ -119,4 +120,5 @@ body {
     font-size: 21px;
     line-height: 26px;
     color: #fff;
+    text-transform: uppercase;
   }
