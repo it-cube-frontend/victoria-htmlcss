@@ -106,7 +106,7 @@ body {
   }
 
   .traveldate {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
   }
@@ -115,4 +115,8 @@ body {
     background: var(--basic-blue);
     width: 458px;
     height: 58px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff;
   }
