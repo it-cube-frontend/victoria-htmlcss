@@ -14,7 +14,7 @@ body {
 
 }
 
-.site-navagition {
+.site-navigation {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
@@ -47,6 +47,7 @@ body {
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
+    list-style: none;
   }
 
  .reason {
@@ -72,6 +73,7 @@ body {
 
   .advantages-2 {
     background: var(--basic-grey);
+    list-style: none;
   }
 
   .advantages-info {
@@ -109,6 +111,7 @@ body {
 
   .social {
     background: var(--basic-white);
+    list-style: none;
   }
 
   .traveldate {
