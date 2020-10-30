@@ -19,6 +19,7 @@ body {
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
+    list-style: none;
 }
 
 .headers {
