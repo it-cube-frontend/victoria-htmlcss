@@ -58,7 +58,7 @@ body {
  .reason-number {
     font-size: 14px;
     line-height: 21px;
-    color: var(--basic-black);
+    color: var(--basic-white);
  }
 
  .reason-slogan {
