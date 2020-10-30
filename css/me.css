@@ -34,12 +34,12 @@ body {
   opacity: .3;
 }
 
-.search-sedona type:hover {
+.search-sedona :hover {
   background-color: var(--basic-dark-brown);
   color: var(--basic-white);
 }
 
-.search-sedona type:active {
+.search-sedona :active {
   background-color: var(--basic-very-dark-brown);
   color: var(--basic-white);
   opacity: .3;
@@ -137,6 +137,11 @@ body {
   .social {
     background: var(--basic-white);
     list-style: none;
+    /* text-decoration: none; */
+  }
+
+  .social a {
+    color: #000;
     text-decoration: none;
   }
 
