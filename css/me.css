@@ -34,12 +34,12 @@ body {
   opacity: .3;
 }
 
-.search-sedona :hover {
+.search-sedona type:hover {
   background-color: var(--basic-dark-brown);
   color: var(--basic-white);
 }
 
-.search-sedona :active {
+.search-sedona type:active {
   background-color: var(--basic-very-dark-brown);
   color: var(--basic-white);
   opacity: .3;
