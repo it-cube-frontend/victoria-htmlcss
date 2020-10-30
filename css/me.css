@@ -21,6 +21,18 @@ body {
     color: var(--basic-black);
     list-style: none;
 }
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:active{
+  color: var(--basic-black);
+  opacity: .3;
+}
 
 .headers {
     font-weight: bold;
@@ -35,6 +47,7 @@ body {
     --basic-blue: #81B3D2;
     --basic-lightbrown: #766357;
     --basic-grey: #EEEEEE;
+
   }
 
   .description {
