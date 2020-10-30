@@ -125,6 +125,7 @@ body {
   .social {
     background: var(--basic-white);
     list-style: none;
+    text-decoration: none;
   }
 
   .traveldate {
