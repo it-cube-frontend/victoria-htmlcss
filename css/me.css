@@ -29,9 +29,17 @@ body {
   color: var(--basic-blue);
 }
 
-.site-navigation a:active{
+.site-navigation a:active {
   color: var(--basic-black);
   opacity: .3;
+}
+
+.search-sedona a:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.search-sedona a:active {
+  background-color: var(--basic-very-dark-brown);
 }
 
 .headers {
@@ -45,9 +53,10 @@ body {
     --basic-black: #000;
     --basic-brown: #333;
     --basic-blue: #81B3D2;
-    --basic-lightbrown: #766357;
+    --basic-light-brown: #766357;
     --basic-grey: #EEEEEE;
-
+    --basic-dark-brown: #604E43;
+    --basic-very-dark-brown: #503E33;
   }
 
   .description {
