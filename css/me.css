@@ -36,10 +36,12 @@ body {
 
 .search-sedona a:hover {
   background-color: var(--basic-dark-brown);
+  color: var(--basic-white);
 }
 
 .search-sedona a:active {
   background-color: var(--basic-very-dark-brown);
+  color: var(--basic-light-brown);
 }
 
 .headers {
