@@ -93,6 +93,7 @@ body {
     height: 86px;
     width: 568px;
     text-transform: uppercase;
+    color: var(--basic-white);
   }
 
   .footer {
