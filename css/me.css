@@ -34,17 +34,6 @@ body {
   opacity: .3;
 }
 
-.search-sedona :hover {
-  background-color: var(--basic-dark-brown);
-  color: var(--basic-white);
-}
-
-.search-sedona :active {
-  background-color: var(--basic-very-dark-brown);
-  color: var(--basic-white);
-  opacity: .3;
-}
-
 .headers {
     font-weight: bold;
     font-size: 21px;
@@ -60,6 +49,8 @@ body {
     --basic-grey: #EEEEEE;
     --basic-dark-brown: #604E43;
     --basic-very-dark-brown: #503E33;
+    --basic--dark-blue: #669EC0;
+    --basic-very-dark-blue: #5496BD;
   }
 
   .description {
@@ -160,6 +151,11 @@ body {
     line-height: 26px;
     color: #fff;
     text-transform: uppercase;
+  }
+
+  .button a:hover {
+    background-color: var(--basic--dark-blue);
+    color: var(--basic-white);
   }
 
   .reason-number2 {
