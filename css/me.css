@@ -153,7 +153,7 @@ body {
     text-transform: uppercase;
   }
 
-  .button a:hover {
+  .button type:hover {
     background-color: var(--basic--dark-blue);
     color: var(--basic-white);
   }
