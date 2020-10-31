@@ -163,3 +163,8 @@ body {
     line-height: 21px;
     color: var(--basic-black);
   }
+
+  .headers2 {
+    color: var(--basic-white);
+    font-size: 21px;
+  }
