@@ -14,6 +14,14 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .site-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -34,12 +42,23 @@ body {
   opacity: .3;
 }
 
-.search-sedona :hover {
-  background-color: var(--basic-dark-brown);
+.search-sedona {
+  background-color: var(--basic-light-brown);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  height: 86px;
+  width: 568px;
+  text-transform: uppercase;
   color: var(--basic-white);
+  border: none;
 }
 
-.search-sedona :active {
+.search-sedona:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.search-sedona:active {
   background-color: var(--basic-very-dark-brown);
   color: var(--basic-white);
   opacity: .3;
@@ -49,6 +68,12 @@ body {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+}
+
+.headers-2{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 :root { 
@@ -113,17 +138,6 @@ body {
     line-height: 24px;
   }
 
-  .search-sedona {
-    background: var(--basic-lightbrown);
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    height: 86px;
-    width: 568px;
-    text-transform: uppercase;
-    color: var(--basic-white);
-  }
-
   .footer {
     background: var(--basic-white);
   }
@@ -138,11 +152,6 @@ body {
     background: var(--basic-white);
     list-style: none;
     /* text-decoration: none; */
-  }
-
-  .social a {
-    color: #000;
-    text-decoration: none;
   }
 
   .traveldate {
