@@ -3,7 +3,8 @@ body {
     max-width: 1200px; 
     margin: 10px; 
     padding: 0; 
-    font-family: "PT Sans Narrow"; 
+    /* font-family: "PT Sans";  */
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px; 
     line-height: 21px; 
     font-weight: normal; 
@@ -27,6 +28,7 @@ body {
     font-weight: bold;
     color: var(--basic-black);
     list-style: none;
+    text-decoration: none;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -41,33 +43,7 @@ body {
   opacity: .3;
 }
 
-<<<<<<< HEAD
-=======
-.search-sedona {
-  background-color: var(--basic-light-brown);
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  height: 86px;
-  width: 568px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  border: none;
-}
-
-.search-sedona:hover {
-  background-color: var(--basic-dark-brown);
-}
-
-.search-sedona:active {
-  background-color: var(--basic-very-dark-brown);
-  color: var(--basic-white);
-  opacity: .3;
-}
-
->>>>>>> f9cd48299874dfd9c80eeff6788903a1dc0191bf
 .headers {
-    font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-grey);
@@ -137,6 +113,7 @@ body {
   .advantages-2 {
     background: var(--basic-white);
     list-style: none;
+    background-color: var(--basic-grey);
   }
 
   .advantages-info {
@@ -204,6 +181,8 @@ body {
 
   .advantages-info2 {
     background-color: var(--basic-white);
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .advantages-grey {
@@ -222,11 +201,11 @@ body {
     color: var(--basic-black);
   }
 
-  .forhidden {
-    display: none;
-  }
-  
   .parameters {
     text-decoration: none;
     color: var(--basic-black);
+  }
+
+li {
+    list-style: none;
   }
