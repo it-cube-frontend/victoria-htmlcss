@@ -38,6 +38,14 @@ body {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+    background-color: ;
+}
+
+.headers2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+
 }
 
 :root { 
@@ -165,6 +173,6 @@ body {
   }
 
   .headers2 {
-    color: var(--basic-white);
+    background-color: var(--basic-white);
     font-size: 21px;
   }
