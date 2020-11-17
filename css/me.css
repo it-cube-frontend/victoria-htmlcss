@@ -7,11 +7,10 @@ body {
     font-size: 14px; 
     line-height: 21px; 
     font-weight: normal; 
-    color: var(--basic-brown); 
+    color: var(--basic-black); 
     text-transform: uppercase; 
     background-color: var(--basic-white); 
     text-align: center; 
-
 }
 
 .site-navigation {
@@ -39,13 +38,13 @@ body {
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-grey);
+    color: var(--basic-black);
 }
 
 .headers2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-
 }
 
 :root { 
@@ -65,6 +64,7 @@ body {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    color: var(--basic-black);
   }
 
   .advantages {
@@ -110,6 +110,7 @@ body {
     font-weight: bold;
     font-size: 30px;
     line-height: 24px;
+    color: var(--basic-black);
   }
 
   .search-sedona {
@@ -136,7 +137,6 @@ body {
   .social {
     background: var(--basic-white);
     list-style: none;
-    /* text-decoration: none; */
   }
 
   .social a {
@@ -175,6 +175,7 @@ body {
 
   .headers2 {
     background-color: var(--basic-white);
+    color: var(--basic-black);
     font-size: 21px;
   }
 
@@ -183,6 +184,26 @@ body {
   }
 
   .advantages-grey {
-    background: var(--basic-grey);
+    background-color: var(--basic-grey);
     list-style: none;
+  }
+
+  .headers3 {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    font-size: 21px;
+  }
+
+  .sort {
+    font-size: 14px;
+    color: var(--basic-black);
+  }
+
+  .forhidden {
+    display: none;
+  }
+  
+  .parameters {
+    text-decoration: none;
+    color: var(--basic-black);
   }
