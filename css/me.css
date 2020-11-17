@@ -176,3 +176,7 @@ body {
     background-color: var(--basic-white);
     font-size: 21px;
   }
+
+  .advantages-info2 {
+    background-color: var(--basic-white);
+  }
