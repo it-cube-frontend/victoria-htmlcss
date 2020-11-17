@@ -180,3 +180,8 @@ body {
   .advantages-info2 {
     background-color: var(--basic-white);
   }
+
+  .advantages-grey {
+    background: var(--basic-grey);
+    list-style: none;
+  }
