@@ -1,7 +1,7 @@
 body {
     min-width: 960px; 
-    max-width: 1200px; 
-    margin: 10px; 
+    width: 1200px; 
+    margin: 0 auto; 
     padding: 0; 
     /* font-family: "PT Sans";  */
     font-family: 'PT Sans', sans-serif;
@@ -12,6 +12,20 @@ body {
     text-transform: uppercase; 
     background-color: var(--basic-white); 
     text-align: center; 
+}
+
+:root { 
+  --basic-white: #fff;
+  --basic-black: #000;
+  --basic-brown: #333;
+  --basic-blue: #81B3D2;
+  --basic-light-brown: #766357;
+  --basic-grey: #EEEEEE;
+  --basic-dark-brown: #604E43;
+  --basic-very-dark-brown: #503E33;
+  --basic--dark-blue: #669EC0;
+  --basic-very-dark-blue: #5496BD;
+  --basic-white-opacity: rgba(255, 255, 255, .3);
 }
 
 .visually-hidden {
@@ -29,6 +43,7 @@ body {
     color: var(--basic-black);
     list-style: none;
     text-decoration: none;
+    grid-template-columns: lfr 200px lfr;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -61,19 +76,6 @@ body {
   font-size: 21px;
   line-height: 21px;
 }
-
-:root { 
-    --basic-white: #fff;
-    --basic-black: #000;
-    --basic-brown: #333;
-    --basic-blue: #81B3D2;
-    --basic-light-brown: #766357;
-    --basic-grey: #EEEEEE;
-    --basic-dark-brown: #604E43;
-    --basic-very-dark-brown: #503E33;
-    --basic--dark-blue: #669EC0;
-    --basic-very-dark-blue: #5496BD;
-  }
 
   .description {
     font-weight: bold;
@@ -131,6 +133,7 @@ body {
 
   .footer {
     background: var(--basic-white);
+    opacity: 0.9;
   }
 
   .contact {
@@ -208,4 +211,27 @@ body {
 
 li {
     list-style: none;
+  }
+
+  .search-sedona {
+    width: 568px;
+    height: 86px;
+    left: 356px;
+    top: 2083px;
+    background-color: var(--basic-light-brown);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    color: var(--basic-white);
+    border: none;
+  }
+
+  .search-sedona:hover {
+    color: var(--basic-white);
+    background-color: var(--basic-dark-brown);
+  }
+
+  .search-sedona:active {
+    background-color: var(--basic-very-dark-brown);
+    color: var(--basic-white-opacity);
   }
