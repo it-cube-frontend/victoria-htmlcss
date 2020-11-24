@@ -3,7 +3,6 @@ body {
     width: 1200px; 
     margin: 0 auto; 
     padding: 0; 
-    /* font-family: "PT Sans";  */
     font-family: 'PT Sans', sans-serif;
     font-size: 14px; 
     line-height: 21px; 
@@ -12,6 +11,22 @@ body {
     text-transform: uppercase; 
     background-color: var(--basic-white); 
     text-align: center; 
+    
+    
+    display: grid;
+    grid-template-columns: lfr;
+    grid-template-rows: 56px lfr 120px;
+}
+
+.header {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.main {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  grid-template-columns: lfr 138px lfr;
 }
 
 :root { 
@@ -42,8 +57,20 @@ body {
     font-weight: bold;
     color: var(--basic-black);
     list-style: none;
+    display: grid;
     text-decoration: none;
-    grid-template-columns: lfr 200px lfr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.site-navigation ::before {
+  content: "";
+  
+}
+
+.site-navigation img {
+  grid-column: ;
+
 }
 
 .site-navigation a {
@@ -135,6 +162,8 @@ body {
   .footer {
     background: var(--basic-white);
     opacity: 0.9;
+    outline: 2px solid red;
+    outline-offset: -2px;
   }
 
   .contact {
@@ -243,6 +272,9 @@ li {
     font-weight: bold;
     color: var(--basic-black);
     list-style: none;
+  }
+
+  a {
     text-decoration: none;
   }
 
@@ -250,7 +282,6 @@ li {
     font-size: 14px;
     color: var(--basic-black);
     line-height: 21px;
-    text-decoration: none;
   }
 
   .detail {
