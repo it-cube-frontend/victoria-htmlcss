@@ -45,6 +45,7 @@ body {
     text-decoration: none;
     grid-template-columns: lfr 200px lfr;
 }
+
 .site-navigation a {
   color: var(--basic-black);
   text-decoration: none;
@@ -234,4 +235,46 @@ li {
   .search-sedona:active {
     background-color: var(--basic-very-dark-brown);
     color: var(--basic-white-opacity);
+  }
+
+  .hotel-name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .hotel-info {
+    font-size: 14px;
+    color: var(--basic-black);
+    line-height: 21px;
+    text-decoration: none;
+  }
+
+  .detail {
+    position: absolute;
+    width: 110px;
+    height: 27px;
+    background-color: var(--basic-very-dark-blue);
+    color: var(--basic-white);
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .book {
+    position: absolute;
+    width: 110px;
+    height: 27px;
+    background-color: var(--basic-light-brown);
+    color: var(--basic-white);
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
   }
