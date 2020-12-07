@@ -57,20 +57,26 @@ body {
     font-weight: bold;
     color: var(--basic-black);
     list-style: none;
+    
+    
     display: grid;
     text-decoration: none;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr;
 }
 
-.site-navigation ::before {
+.site-navigation li {
+  grid-row: 1/2;
+}
+
+.site-navigation::before {
   content: "";
-  
+  grid-column: 3;
+  grid-row: 1/2;
 }
 
 .site-navigation img {
   grid-column: ;
-
 }
 
 .site-navigation a {
