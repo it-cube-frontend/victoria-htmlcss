@@ -52,17 +52,17 @@ body {
 }
 
 .site-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-    list-style: none;
-    
-    
-    display: grid;
-    text-decoration: none;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  list-style: none;
+      
+      
+  display: grid;
+  text-decoration: none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 
 .site-navigation li {
@@ -76,6 +76,7 @@ body {
 }
 
 .site-navigation img {
+  grid-row: 1/2;
   grid-column: ;
 }
 
