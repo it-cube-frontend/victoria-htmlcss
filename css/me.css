@@ -23,6 +23,13 @@ body {
   outline-offset: -2px;
 }
 
+.header nav{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+
+}
+
 .main {
   outline: 2px solid red;
   outline-offset: -2px;
@@ -58,26 +65,24 @@ body {
   color: var(--basic-black);
   list-style: none;
       
-      
+  grid-column: 1/-1;
+  grid-row: 1/2;
   display: grid;
   text-decoration: none;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr;
-}
-
-.site-navigation li {
-  grid-row: 1/2;
+  grid-template-rows: 1fr;
 }
 
 .site-navigation::before {
   content: "";
-  grid-column: 3;
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 
-.site-navigation img {
+.header img {
   grid-row: 1/2;
-  grid-column: ;
+  grid-column: 3/4;
+
 }
 
 .site-navigation a {
@@ -117,6 +122,11 @@ body {
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+
+
+    display: grid;
+    grid-column: 1/-1;
+
   }
 
   .advantages {
@@ -127,10 +137,34 @@ body {
   }
 
  .reason {
+   display: grid;
+   grid-template-columns: 400px 1fr;
+   grid-template-rows: 90px 70px 1fr;
+   align-items: center;
     font-size: 21px;
     font-weight: bold;
     background: var(--basic-blue);
     color: var(--basic-white);
+ }
+
+ .reason img {
+   grid-column: -1/-2;
+   grid-row: 1/-1;
+ }
+ .reason h3 {
+   margin: 0;
+    align-self: end;
+ }
+
+ .reason-most {
+   display: grid;
+   grid-template-columns: 1fr 400px;
+   grid-template-rows: 90px 70px 1fr;
+ }
+
+ .reason-most img {
+   grid-row: 1/-1;
+   grid-column: 1/2;
  }
 
  .reason-number {
@@ -141,6 +175,8 @@ body {
  }
 
  .reason-slogan {
+   align-self: start;
+   margin: 0;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
@@ -151,6 +187,7 @@ body {
     background: var(--basic-white);
     list-style: none;
     background-color: var(--basic-grey);
+
   }
 
   .advantages-info {
@@ -315,4 +352,43 @@ li {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .welcome {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .svg-welcome {
+    z-index: 1;
+   grid-row: 1/2;
+   grid-column: 2/3;
+  }
+
+  .sedona-m {
+    z-index: 0;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  .eat-home-gift {
+    width: 1200px;
+    height: 330px;
+    background-color: var(--basic-white);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .advantages-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 1/-1;
   }
