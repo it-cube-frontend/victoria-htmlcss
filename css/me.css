@@ -47,6 +47,9 @@ body {
   --basic--dark-blue: #669EC0;
   --basic-very-dark-blue: #5496BD;
   --basic-white-opacity: rgba(255, 255, 255, .3);
+  --basic-grey: #CACACA;
+  --basic-dark-grey: #F2F2F2;
+  --basic-very-dark-grey: #666666;
 }
 
 .visually-hidden {
@@ -63,6 +66,7 @@ body {
   font-weight: bold;
   color: var(--basic-black);
   list-style: none;
+  padding: 0;
       
   grid-column: 1/-1;
   grid-row: 1/2;
@@ -81,7 +85,7 @@ body {
 .header img {
   grid-row: 1/2;
   grid-column: 3/4;
-
+  margin: 0 auto;
 }
 
 .site-navigation a {
@@ -102,6 +106,7 @@ body {
     line-height: 21px;
     background-color: var(--basic-grey);
     color: var(--basic-black);
+    margin: 0;
 }
 
 .headers2 {
@@ -171,6 +176,8 @@ body {
     line-height: 21px;
     color: var(--basic-white);
     font-weight: normal;
+    margin: 0;
+    padding: 0;
  }
 
  .reason-slogan {
@@ -186,6 +193,7 @@ body {
     background: var(--basic-white);
     list-style: none;
     background-color: var(--basic-grey);
+    margin: auto 0;
 
   }
 
@@ -205,13 +213,11 @@ body {
   .footer {
     background: var(--basic-white);
     opacity: 0.9;
-    outline: 2px solid red;
-    outline-offset: -2px;
     margin: 0;
     padding: 0;
 
     display: grid;
-    grid-template-columns: 348px 179px 46px 59px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
 
@@ -221,7 +227,7 @@ body {
   }
  
   .footer li {
-    grid-columns: 2/5;
+    grid-row: 2/3;
   }
   
   .contact {
@@ -239,7 +245,7 @@ body {
     display: grid;
   }
 
-  .social {
+  .all-social li {
     width: 46px;
     height: 48px;
     background-color: var(--basic-blue);
@@ -363,6 +369,7 @@ li {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
+    text-transform: uppercase;
   }
 
   .book {
@@ -376,6 +383,7 @@ li {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
+    text-transform: uppercase;
   }
 
   .welcome {
@@ -414,9 +422,45 @@ li {
     width: 1200px;
     height: 256px;
     background-color: var(--basic-grey);
+    margin: 0;
+    padding: 0;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column: 1/-1;
   }
+
+  .star {
+    color: var(--basic-blue);
+    font-size: 22px;
+  }
+
+  .arrow {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--basic-grey);
+    font-size: 30px;
+  }
+
+  .arrow2 {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--basic-blue);
+    font-size: 30px;
+  }
+
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-dark-grey);
+  color: var(--basic-very-dark-grey);
+}
+
+.all-hotels {
+  display: grid;
+  grid-template-columns: 72px 134 1fr 1fr 1fr 1fr 112px 72;
+  grid-template-rows: 1fr;
+}

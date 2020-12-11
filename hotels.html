@@ -9,6 +9,7 @@
     <body>
       <header class="header">
         <nav>
+          <img src="img/logo.svg">
           <ul class="site-navigation">
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и Видео</a></li>
@@ -18,8 +19,9 @@
         </nav>
       </header>
     <main>
+      <img src="img/background.jpg" width='1200' height='217'>
     <section>
-    <p class="forhidden">
+    <p class="visually-hidden">
       Фильтр гостиниц
     </p>
       <!-- Тут будет форма фильтра -->
@@ -30,12 +32,12 @@
         <li><a href="#"  class="parameters">По типу</a></li>
         <li><a href="#"  class="parameters">По рейтингу</a></li>
       </ul>
-    <button type="button">&#9650;</button>
-    <button type="button">&#9660;</button>
+    <button type="button" class="arrow">&#9650;</button>
+    <button type="button" class="arrow2">&#9660;</button>
       </section>
       <section>
-    <h2 class="forhidden">Список гостиниц</h2>
-    <ul>
+    <h2 class="visually-hidden">Список гостиниц</h2>
+    <ul class="all-hotels">
      <li>
       <a href="blank.html">
       <h3 class="hotel-name">Amara Resort & Spa</h3>
@@ -43,11 +45,11 @@
       </a>
         <p>Гостиница<br>
         От 4000 Р.<br>
-        &#9733; &#9733; &#9733; &#9733;
-        Рейтинг: 8,5
+        <span class="star">&#9733; &#9733; &#9733; &#9733;</span>
+        <p class="rating">Рейтинг: 8,5</p>
       </p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button type="button" class="detail">Подробнее</button>
+        <button type="button" class="book">Забронировать</button>
     </li>
     <li>
       <a href="blank.html">
@@ -56,8 +58,8 @@
       </a>
         <p class="hotel-info">Мотель<br>
         От 3000 Р.<br>
-        &#9733; &#9733; &#9733;
-        Рейтинг: 8,9
+        <span class="star">&#9733; &#9733; &#9733;</span>
+        <p class="rating">Рейтинг: 8,9</p>
       </p>
         <button type="button" class="detail">ПОДРОБНЕЕ</button>
         <button type="button" class="book">Забронировать</button>
@@ -69,25 +71,25 @@
       </a>
         <p>Апартаменты<br>
         От 2000 Р.<br>
-        &#9733; &#9733;
-        Рейтинг: 9,2
+        <span class="star">&#9733; &#9733;</span>
+        <p class="rating">Рейтинг: 9,2</p>
       </p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button type="button" class="detail">Подробнее</button>
+        <button type="button" class="book">Забронировать</button>
     </li>
     </ul>
       </section>
     </main>
-    <footer>
-    <section>
-      <h3> #visitSEDONA </h3>
-      <p>ТЕЛ: +7(495) 666-01-66</p>
-      <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
-      </ul>  
-    </section> 
+    <footer class="footer"> 
+      <section class="contact">
+        <p>#visitSEDONA</p>
+        <p>ТЕЛ: +7(495) 666-01-66</p>
+      </section>
+        <ul  class="all-social">
+          <li><img src="img/twitter.svg" width="17" height="17" alt="твиттер" class="social"></li>
+          <li><img src="img/fb.svg" width="12" height="22" alt="фейсбук"  class="social"></li>
+          <li><img src="img/y.svg" width="20" height="16" alt="ютуб"  class="social"></li>
+        </ul> 
     </footer>
       </body>
     </html>
