@@ -47,7 +47,7 @@ body {
   --basic--dark-blue: #669EC0;
   --basic-very-dark-blue: #5496BD;
   --basic-white-opacity: rgba(255, 255, 255, .3);
-  --basic-grey: #CACACA;
+  --basic-grey2: #CACACA;
   --basic-dark-grey: #F2F2F2;
   --basic-very-dark-grey: #666666;
 }
@@ -396,6 +396,8 @@ li {
     z-index: 1;
     grid-row: 1/2;
     grid-column: 2/3;
+
+    padding: 75px;
   }
 
   .sedona-m {
@@ -464,3 +466,26 @@ li {
   grid-template-columns: 72px 134 1fr 1fr 1fr 1fr 112px 72;
   grid-template-rows: 1fr;
 }
+
+.social-t {
+  padding: 15px 10px;
+}
+
+.social-f {
+  padding: 13px 15px;
+}
+
+.social-y {
+  padding: 15px 10px;
+}
+
+.white-line {
+  z-index: 1;
+  grid-row: -1/-2;
+  grid-column: 1/-1;
+  
+  width: 1200px;
+  height: 57px;
+}
+
+
