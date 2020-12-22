@@ -20,7 +20,7 @@ body {
 
 .header {
   width: 1200px;
-  height: 70px;
+  height: 56px;
   background-color: var(--basic-white);
 }
 
@@ -86,6 +86,8 @@ body {
   grid-row: 1/2;
   grid-column: 3/4;
   margin: 0 auto;
+
+  z-index: 3;
 }
 
 .site-navigation a {
@@ -107,12 +109,19 @@ body {
     background-color: var(--basic-grey);
     color: var(--basic-black);
     margin: 0;
+
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .headers2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .headers-2{
@@ -126,6 +135,8 @@ body {
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+    margin-top: 43px;
+    margin-bottom: 0;
 
 
     display: grid;
@@ -141,10 +152,11 @@ body {
   }
 
  .reason {
-   display: grid;
-   grid-template-columns: 400px 1fr;
-   grid-template-rows: 90px 70px 1fr;
-   align-items: center;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 90px 70px 1fr;
+    
+    align-items: center;
     font-size: 21px;
     font-weight: bold;
     background: var(--basic-blue);
@@ -208,6 +220,10 @@ body {
     font-size: 30px;
     line-height: 24px;
     color: var(--basic-black);
+
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 17px;
   }
 
   .footer {
@@ -241,6 +257,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 19px;
 
     display: grid;
   }
@@ -278,6 +295,9 @@ body {
     line-height: 21px;
     color: var(--basic-black);
     background-color: var(--basic-grey);
+
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .headers2 {
@@ -290,6 +310,9 @@ body {
     background-color: var(--basic-white);
     font-size: 14px;
     line-height: 14px;
+
+    margin-bottom: 42px;
+    margin-top: 30px;
   }
 
   .advantages-grey {
@@ -301,6 +324,9 @@ body {
     background-color: var(--basic-blue);
     color: var(--basic-white);
     font-size: 21px;
+
+    display: inline-block;
+    margin-top: 40px;
   }
 
   .sort {
@@ -328,6 +354,9 @@ li {
     font-size: 21px;
     color: var(--basic-white);
     border: none;
+
+    display: inline-block;
+    margin-top: 25px;
   }
 
   .search-sedona:hover {
@@ -393,7 +422,7 @@ li {
   }
 
   .svg-welcome {
-    z-index: 1;
+    z-index: 2;
     grid-row: 1/2;
     grid-column: 2/3;
 
@@ -401,7 +430,7 @@ li {
   }
 
   .sedona-m {
-    z-index: 0;
+    z-index: 1;
     grid-row: 1/2;
     grid-column: 1/-1;
   }
@@ -444,6 +473,10 @@ li {
     border: none;
     color: var(--basic-grey);
     font-size: 30px;
+
+    display: grid;
+    grid-column: -3/-1;
+    grid-row: 1/-1;
   }
 
   .arrow2 {
@@ -480,12 +513,64 @@ li {
 }
 
 .white-line {
-  z-index: 1;
+  z-index: 3;
   grid-row: -1/-2;
   grid-column: 1/-1;
   
   width: 1200px;
   height: 57px;
+  padding-top: 452px;
 }
 
+.sedona-best {
+  margin-bottom: 50px;
+  margin-top: 44px;
+}
 
+.eat-home-gift span {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.eat-home-gift img {
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+
+.foto-video {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.map-state {
+  margin-left: 36px;
+}
+
+.hotel-header {
+  margin-left: 15px;
+}
+
+.icon {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heshteg {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 74px;
+}
+
+.number {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.sort-2 {
+  display: grid;
+  grid-template-columns: 72px 136px repeat(4, 1fr) 112px 72px;
+  grid-template-rows: 1fr;
+  grid-row: 1/-1;
+  grid-column: 2/-1;
+}
