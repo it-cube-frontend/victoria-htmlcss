@@ -1,0 +1,576 @@
+body {
+    min-width: 960px; 
+    width: 1200px; 
+    margin: 0 auto; 
+    padding: 0; 
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px; 
+    line-height: 21px; 
+    font-weight: normal; 
+    color: var(--basic-black); 
+    text-transform: uppercase; 
+    background-color: var(--basic-white); 
+    text-align: center; 
+    
+    
+    display: grid;
+    grid-template-columns: lfr;
+    grid-template-rows: 56px lfr 120px;
+}
+
+.header {
+  width: 1200px;
+  height: 56px;
+  background-color: var(--basic-white);
+}
+
+.header nav{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+
+}
+
+.main {
+  grid-template-columns: lfr 138px lfr;
+}
+
+:root { 
+  --basic-white: #fff;
+  --basic-black: #000;
+  --basic-brown: #333;
+  --basic-blue: #81B3D2;
+  --basic-light-brown: #766357;
+  --basic-grey: #EEEEEE;
+  --basic-dark-brown: #604E43;
+  --basic-very-dark-brown: #503E33;
+  --basic--dark-blue: #669EC0;
+  --basic-very-dark-blue: #5496BD;
+  --basic-white-opacity: rgba(255, 255, 255, .3);
+  --basic-grey2: #CACACA;
+  --basic-dark-grey: #F2F2F2;
+  --basic-very-dark-grey: #666666;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.site-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  list-style: none;
+  padding: 0;
+      
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: grid;
+  text-decoration: none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.site-navigation::before {
+  content: "";
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.header img {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  margin: 0 auto;
+
+  z-index: 3;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: .3;
+}
+
+.headers {
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--basic-grey);
+    color: var(--basic-black);
+    margin: 0;
+
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.headers2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.headers-2{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+  .description {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+    margin-top: 43px;
+    margin-bottom: 0;
+
+
+    display: grid;
+    grid-column: 1/-1;
+
+  }
+
+  .advantages {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    list-style: none;
+  }
+
+ .reason {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 90px 70px 1fr;
+    
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+    background: var(--basic-blue);
+    color: var(--basic-white);
+ }
+
+ .reason img {
+   grid-column: -1/-2;
+   grid-row: 1/-1;
+ }
+ .reason h3 {
+   margin: 0;
+    align-self: end;
+ }
+
+ .reason-most {
+   display: grid;
+   grid-template-columns: 1fr 400px;
+   grid-template-rows: 90px 70px 1fr;
+ }
+
+ .reason-most img {
+   grid-row: 1/-1;
+   grid-column: 1/2;
+ }
+
+ .reason-number {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+ }
+
+ .reason-slogan {
+   align-self: start;
+   margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    font-weight: normal;
+ }
+
+  .advantages-2 {
+    background: var(--basic-white);
+    list-style: none;
+    background-color: var(--basic-grey);
+    margin: auto 0;
+
+  }
+
+  .advantages-info {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-brown);
+  }
+
+  .interested {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    color: var(--basic-black);
+
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 17px;
+  }
+
+  .footer {
+    background: var(--basic-white);
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .footer p {
+    grid-row: 1/-1;
+    grid-columns: 1/2;
+  }
+ 
+  .footer li {
+    grid-row: 2/3;
+  }
+  
+  .contact {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .all-social {
+    background: var(--basic-white);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 19px;
+
+    display: grid;
+  }
+
+  .all-social li {
+    width: 46px;
+    height: 48px;
+    background-color: var(--basic-blue);
+  }
+
+  .traveldate {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .button {
+    background: var(--basic-blue);
+    width: 458px;
+    height: 58px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .button button:hover {
+    background-color: var(--basic--dark-blue);
+    color: var(--basic-white);
+  }
+
+  .reason-number2 {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .headers2 {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    font-size: 21px;
+  }
+
+  .advantages-info2 {
+    background-color: var(--basic-white);
+    font-size: 14px;
+    line-height: 14px;
+
+    margin-bottom: 42px;
+    margin-top: 30px;
+  }
+
+  .advantages-grey {
+    background-color: var(--basic-grey);
+    list-style: none;
+  }
+
+  .headers3 {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    font-size: 21px;
+
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  .sort {
+    font-size: 14px;
+    color: var(--basic-black);
+  }
+
+  .parameters {
+    text-decoration: none;
+    color: var(--basic-black);
+  }
+
+li {
+    list-style: none;
+  }
+
+  .search-sedona {
+    width: 568px;
+    height: 86px;
+    left: 356px;
+    top: 2083px;
+    background-color: var(--basic-light-brown);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    color: var(--basic-white);
+    border: none;
+
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .search-sedona:hover {
+    color: var(--basic-white);
+    background-color: var(--basic-dark-brown);
+  }
+
+  .search-sedona:active {
+    background-color: var(--basic-very-dark-brown);
+    color: var(--basic-white-opacity);
+  }
+
+  .hotel-name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .hotel-info {
+    font-size: 14px;
+    color: var(--basic-black);
+    line-height: 21px;
+  }
+
+  .detail {
+    position: absolute;
+    width: 110px;
+    height: 27px;
+    background-color: var(--basic-very-dark-blue);
+    color: var(--basic-white);
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  .book {
+    position: absolute;
+    width: 110px;
+    height: 27px;
+    background-color: var(--basic-light-brown);
+    color: var(--basic-white);
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  .welcome {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .svg-welcome {
+    z-index: 2;
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    padding: 75px;
+  }
+
+  .sedona-m {
+    z-index: 1;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  .eat-home-gift {
+    width: 1200px;
+    height: 330px;
+    background-color: var(--basic-white);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .advantages-all {
+    width: 1200px;
+    height: 256px;
+    background-color: var(--basic-grey);
+    margin: 0;
+    padding: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 1/-1;
+  }
+
+  .star {
+    color: var(--basic-blue);
+    font-size: 22px;
+  }
+
+  .arrow {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--basic-grey);
+    font-size: 30px;
+
+    display: grid;
+    grid-column: -3/-1;
+    grid-row: 1/-1;
+  }
+
+  .arrow2 {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--basic-blue);
+    font-size: 30px;
+  }
+
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-dark-grey);
+  color: var(--basic-very-dark-grey);
+}
+
+.all-hotels {
+  display: grid;
+  grid-template-columns: 72px 134 1fr 1fr 1fr 1fr 112px 72;
+  grid-template-rows: 1fr;
+}
+
+.social-t {
+  padding: 15px 10px;
+}
+
+.social-f {
+  padding: 13px 15px;
+}
+
+.social-y {
+  padding: 15px 10px;
+}
+
+.white-line {
+  z-index: 3;
+  grid-row: -1/-2;
+  grid-column: 1/-1;
+  
+  width: 1200px;
+  height: 57px;
+  padding-top: 452px;
+}
+
+.sedona-best {
+  margin-bottom: 50px;
+  margin-top: 44px;
+}
+
+.eat-home-gift span {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.eat-home-gift img {
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+
+.foto-video {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.map-state {
+  margin-left: 36px;
+}
+
+.hotel-header {
+  margin-left: 15px;
+}
+
+.icon {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heshteg {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 74px;
+}
+
+.number {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.sort-2 {
+  display: grid;
+  grid-template-columns: 72px 136px repeat(4, 1fr) 112px 72px;
+  grid-template-rows: 1fr;
+  grid-row: 1/-1;
+  grid-column: 2/-1;
+}
